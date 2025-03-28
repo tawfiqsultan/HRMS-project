@@ -54,10 +54,6 @@ class Employee extends Model
         return $this->hasMany(Payroll::class, 'EmployeeID');
     }
 
-    /**
-     * العلاقة مع جدول Users (حساب المستخدم).
-     * Employee.employee_id -> Users.employee_id
-     */
     public function user()
     {
         return $this->hasOne(User::class, 'EmployeeID');
