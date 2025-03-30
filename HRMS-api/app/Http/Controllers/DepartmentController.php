@@ -7,7 +7,7 @@ use App\Http\Requests\StoreDepartmentsRequest;
 use App\Http\Requests\UpdateDepartmentsRequest;
 use Illuminate\Http\Request;
 
-class DepartmentsController extends Controller
+class DepartmentController extends Controller
 {
 
     public function getAllDepartments()

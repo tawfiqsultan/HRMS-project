@@ -1,12 +1,12 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\DepartmentsController;
+use App\Http\Controllers\DepartmentController;
 
 Route::prefix('departments')->group(function () {
-    Route::get('/', [DepartmentsController::class, 'getAllDepartments']);
-    Route::post('/add', [DepartmentsController::class, 'addDepartment']);
-    Route::delete('/delete/{id}', [DepartmentsController::class, 'deleteDepartment']);
-    Route::put('/update/{id}', [DepartmentsController::class, 'updateDepartment']);
-    Route::get('/department/{id}', [DepartmentsController::class, 'getDepartment']);
+    Route::get('/', [DepartmentController::class, 'getAllDepartments']);
+    Route::post('/add', [DepartmentController::class, 'addDepartment']);
+    Route::delete('/delete/{id}', [DepartmentController::class, 'deleteDepartment']);
+    Route::put('/update/{id}', [DepartmentController::class, 'updateDepartment']);
+    Route::get('/department/{id}', [DepartmentController::class, 'getDepartment']);
 });
